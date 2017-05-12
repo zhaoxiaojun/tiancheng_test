@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE testsuite SYSTEM "TestCase.dtd">
+<?xml-stylesheet type="text/xsl" href="TestCase.xslt"?>
+<testsuite name="反欺诈平台">
+	<!--测试套-->
+	<setting>
+		<!--设置-->
+		<browser>firefox</browser>
+		<app_url>http://192.168.18.77:8080/imp/a/login</app_url>
+		<seleniumServer>127.0.0.1</seleniumServer>
+		<seleniumPort>0</seleniumPort>
+	</setting>
+	<testcase id="tc1" name="反欺诈调用明细查询单个用户数据">
+		<!--测试用例-->
+		<pageo>FraudDetailPage</pageo>
+		<!--操作的页面对象-->
+		<steps>
+			<!--步骤集-->
+			<step comment="输入用户信息">
+				<!--步骤-->
+				<operation>InputUserInfo</operation>
+				<!--操作-->
+				<value>15112526410</value>
+				<!--值-->
+			</step>
+			<step comment="选择日期">
+				<operation>InputDate</operation>
+				<value>全部</value>
+			</step>
+			<step comment="点击查询按钮">
+				<operation>CkQuery</operation>
+			</step>
+		</steps>
+		<assert>
+			<!--断言-->
+			<assertmethod>assertGreater</assertmethod>
+			<!--方法-->
+			<checkmethod>GetData</checkmethod>
+			<!--检查点-->
+			<exp type="int">0</exp>
+			<!--期望值-->
+		</assert>
+	</testcase>
+	<testcase id="tc2" name="反欺诈调用明细查询全部数据">
+		<pageo>FraudDetailPage</pageo>
+		<steps>
+			<step comment="选择日期">
+				<operation>InputDate</operation>
+				<value>全部</value>
+			</step>
+			<step comment="点击查询按钮">
+				<operation>CkQuery</operation>
+			</step>
+		</steps>
+		<assert>
+			<assertmethod>assertGreater</assertmethod>
+			<checkmethod>GetData</checkmethod>
+			<exp type="int">0</exp>
+		</assert>
+	</testcase>
+	<testcase id="tc3" name="自助验证单个用户验证">
+		<pageo>SelfHelpPage</pageo>
+		<steps>
+			<step comment="输入用户名">
+				<operation>InputUserName</operation>
+				<value>袁伟伟</value>
+			</step>
+			<step comment="输入手机号">
+				<operation>InputPhoneNumber</operation>
+				<value>15112526410</value>
+			</step>
+			<step comment="输入身份证号">
+				<operation>InputCardNumber</operation>
+				<value>420114198804164114</value>
+			</step>
+			<step comment="点击验证按钮">
+				<operation>CkYanzheng</operation>
+			</step>
+		</steps>
+		<assert>
+			<assertmethod>assertNotEqual</assertmethod>
+			<checkmethod>GetResultBorrowmoney</checkmethod>
+			<exp type="str"></exp>
+		</assert>
+	</testcase>
+	<testcase id="tc4" name="预期智能预计查询">
+		<pageo>IntelligentAlarmPage</pageo>
+		<steps>
+			<step comment="输入基本信息">
+				<operation>InputBasicInfo</operation>
+				<value>15112526410</value>
+			</step>
+			<step comment="点击查询按钮">
+				<operation>CkQuery</operation>
+			</step>
+		</steps>
+		<assert>
+			<assertmethod>assertNotEqual</assertmethod>
+			<checkmethod>QueryCheck</checkmethod>
+			<exp type="str"></exp>
+		</assert>
+	</testcase>
+	<testcase id="tc5" name="正常查询用户聊天记录分析">
+		<pageo>ChatLogsPage</pageo>
+		<steps>
+			<step comment="输入基本信息">
+				<operation>InputBasicInfo</operation>
+				<value>15112526410</value>
+			</step>
+			<step comment="点击查询按钮">
+				<operation>CkQuery</operation>
+			</step>
+		</steps>
+		<assert>
+			<assertmethod>assertEqual</assertmethod>
+			<checkmethod>QueryCheck</checkmethod>
+			<exp type="str"></exp>
+		</assert>
+	</testcase>
+	<testcase id="tc6" name="正常查询手机通讯录分析">
+		<pageo>PhoneAddressPage</pageo>
+		<steps>
+			<step comment="输入基本信息">
+				<operation>InputBasicInfo</operation>
+				<value>15112526410</value>
+			</step>
+			<step comment="点击查询按钮">
+				<operation>CkQuery</operation>
+			</step>
+		</steps>
+		<assert>
+			<assertmethod>assertEqual</assertmethod>
+			<checkmethod>QueryCheck</checkmethod>
+			<exp type="str"></exp>
+		</assert>
+	</testcase>
+	<testcase id="tc7" name="用户地理位置跟踪查询用户基本信息">
+		<pageo>UserLocationPage</pageo>
+		<steps>
+			<step comment="输入基本信息">
+				<operation>InputBasicInfo</operation>
+				<value>15112526410</value>
+			</step>
+			<step comment="点击查询按钮">
+				<operation>CkQuery</operation>
+			</step>
+		</steps>
+		<assert>
+			<assertmethod>assertEqual</assertmethod>
+			<checkmethod>QueryCheck</checkmethod>
+			<exp type="str"></exp>
+		</assert>
+	</testcase>
+</testsuite>
