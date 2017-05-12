@@ -1,0 +1,10 @@
+#!/bin/sh
+
+
+mkdir -p build
+echo "BUILD_BUMBER=$BUILD_NUMBER" > build/build_number
+
+
+TC_TARGET_COMMON=${JENKINS_HOME}/workspace/${JOB_NAME}/code/00_PublicCode
+
+[ ! -d ${TC_TARGET_COMMON} ] && ln -s ${JENKINS_HOME}/workspace/TianCheng_Common/00_PublicCode/ ${TC_TARGET_COMMON}

@@ -1,0 +1,127 @@
+{
+"ReturnCode" : 0,
+"Message":"成功！",
+"FunctionCode " : "1001000001",
+"CurrentTime " : "20150908203212000000",
+"TotalNum" : 1,
+"SessionId": "11111111-1111-1111-1111-111111111111",
+"DataList" : [{
+            "UserBasicInfo" : {
+                "UserType" : 1,
+                "UserStatus" : 0,
+                "Platform" : "sadfsfasfd",
+                "OpenId" : "sfdsfdsdfsdf",
+                "UserAccount" : "dfgfdhdfhdfh",
+                "UserId" : "11111111-1111-1111-1111-1111111111188",
+                "UserName" : "用户名",
+                "NickName" : "用户fghfghfgh昵称",
+                "HeadImage" : "用户fghfg头像",
+                "RealName" : "用户fgh姓名",
+                "TelNo" : "手机fgh124df号",
+                "IdentityCard" : "证件dfg234号",
+                "CardType" : 1,
+                "CardAddress" : "证件（身dfgdf1243份证）地址",
+                "RegisterTime" : "20150820165834000004",
+                "Age" : 32,
+                "Sex" : 1,
+                "Hometown" : "籍ertert贯",
+                "GuaranteeLever" : 1,
+                "Update" : "20150820165834000004",
+                "Email" : "email用户邮箱",
+                "IsTuandai" : 0,
+                "IsJCredit" : 1,
+                "IsDCredit" : 1
+            },
+            "LivingInfo" : {
+                "LivingProvince" : "居ert住省份",
+                "LivingCity" : "居住城ertert市",
+                "LivingArea" : "居住区ert域",
+                "LivingAddress" : "居ert住详细地址",
+                "AddressType" : 1,
+                "StudentCertification" : {
+                "GraduateSchool" : "毕业ert院校",
+                "GraduateDate" : "20150820165834000004",
+                "Major" : "专业",
+                "DegreeType" : 1
+            },
+            "FamilyInfo" : {
+                "MarriageType" : 0,
+                "IsHaveChildren" : 0,
+                "ContactName1": "亲属姓ertret名",
+                "ContactRelation1" : "1",
+                "ContactMobilePhone1" : "15468975424",
+                "ContactName2" : "其他亲属ertert姓名",
+                "ContactRelation2" : "1",
+                "ContactMobilePhone2" : "15468975424"
+            },
+            "WorkInfo" : {
+                "CompanyName" : "公司名ert称",
+                "Position" : "职eret位",
+                "Deparment": "部ert门",
+                "JobProvince" : "工作ert省份",
+                "JobCity" : "工作ert城市",
+                "JobArea" : "工作ert区域",
+                "IncomeTypeId" : 200000,
+                "CompanyProvince" : "公司省ert份",
+                "CompanyCity" : "公司城ert市",
+                "CompanyArea" : "公司地ert区",
+                "CompanyAddress" : "公司详ert细地址",
+                "CompanyIndustryTypeId" : 11,
+                "CompanySizeTypeId" : 4,
+                "WorkYears" : 10
+            },
+            "PostPhoneList": {
+                "PhoneListDate" : "20150820165834000004",
+                "AddressList" : "[{
+                    \"phone\":\"10000200002\",
+                    \"name\" : \"张三\",
+                    \"email\" : \"12345@qq.com\"
+                }, {
+                    \"phone\":\"13900200002\",
+                    \"name\": \"姚学铸\",
+                    \"email\" : \"209883@qq.com\"
+                }]"
+            },
+            "PropertyInfo": {
+                "House" : 1,
+                "Car" : 1,
+                "HouseList" : [{
+                    "Mortgage" : 0,
+                    "HouseCity" : "广东省深圳ertertert市（省市区）",
+                    "HouseArea" : "房产ertertert小区名",
+                    "HouseSize" : 100.0,
+                    "Houseage" : 1,
+                    "HouseAmount" : 1000000,
+                    "MortgageAmount" : 100000,
+                    "Mortgageterm" : 1
+                }],
+                "CarList": [{
+                    "Carloans" : 1,
+                    "CarBrand" : "车的品ert牌",
+                    "CarType" : "车的型ert号",
+                    "CarAge" : 2,
+                    "CarAmount" : 40000.0,
+                    "CarloansAmount" : 30000.0,
+                    "Carloansterm" : 12,
+                    "SavingAmount" : 20000.0
+                }]
+            },
+            "StudentInfo": {
+                "LivingProvince" : "学校地址所ert在省份",
+                "LivingCity" : "学校地址所在ert城市",
+                "LivingArea" : "学校地址所ert在区域",
+                "LivingAddress" : "宿舍详细ert地址",
+                "AttendingCollege" : "就读院系",
+                "SchoolAddress" : "学校详细地址",
+                "StudentProfessional" : "就读专业",
+                "AttendingGrade" : "就读年级",
+                "AttendingClass": "就读班级"
+            },
+            "EnterpRegistrInfo": {
+                "IsEnterprisLegalPerson" : 1,
+                "EnterpRegistrTime" : "20150820165111000004",
+                "EnterpRegistrCapital" : 1000000.0,
+                "EnterpRegistrState" : "企业经ertertert营状态"
+            }
+    }]
+}

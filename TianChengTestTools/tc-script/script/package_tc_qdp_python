@@ -1,0 +1,105 @@
+#!/bin/sh
+DEPLOY_CONFIG_FILE=$1
+PACKAGE_MODULE_NAME=$3
+MODULE_LIST=$4
+
+
+PROJECT_BUILD_PATH=target
+PROJECT_CONFIG_DIR=config
+TARGET_DEPLOY_PATH=~/pkg/TianChengSystem/
+
+source_parameter()
+{
+	if [ "${DEPLOY_CONFIG_FILE%/*}" != "$DEPLOY_CONFIG_FILE" ]; then
+                source ${DEPLOY_CONFIG_FILE%/*}/./${DEPLOY_CONFIG_FILE##*/}
+        else
+                source ./$DEPLOY_CONFIG_FILE
+        fi
+}
+
+
+deploy_module()
+{
+	MODULE_NAME=$1
+}
+
+deploy_all()
+{
+	for module_name in ${MODULE_LIST[@]}
+        do
+                # traversal module name
+                eval project_list=\${$module_name[@]}
+                echo $module_name
+
+                # get all project from the module
+                for project_name in ${project_list[@]}
+                do
+                        temp_path=${project_name%/*}
+                        temp_name=${project_name##*/}
+
+			TARGET_BIN=$CURRENT_DEPLOY_DIR/$module_name/$temp_name/$PROJECT_BUILD_PATH/
+	                TARGET_CFG=$CURRENT_DEPLOY_DIR/$module_name/$temp_name/$PROJECT_CONFIG_DIR/
+
+			src_bin=$temp_path/$temp_name/$PROJECT_BUILD_PATH/$temp_name
+			src_cfg=$temp_path/$temp_name/$PROJECT_CONFIG_DIR
+
+			mkdir -p $TARGET_BIN $TARGET_CFG
+                        cp -r $src_cfg/* $TARGET_CFG/
+
+			if [ -f $src_bin ];then
+				cp -r $src_bin $TARGET_BIN/
+			else
+				echo "[**********************************************************]"
+				echo "[********ERROR********] $module_name"
+				echo "[********ERROR********] $src_bin not exist!"
+				echo "[********ERROR********]"
+				echo "[**********************************************************]"
+			fi
+                done
+        done
+}
+
+mkdaily_dir()
+{
+	CURRENT_DATE=`date +%Y%m%d`
+	CURRENT_HOUR=`date +%H_%M_%S`
+	CURRENT_DEPLOY_DIR=$TARGET_DEPLOY_PATH/$CURRENT_DATE/${PACKAGE_MODULE_NAME}_${CURRENT_HOUR}_build-${BUILD_NUMBER}
+
+	# 当前的版本目录名称
+        CURRENT_TARGET_DIR=${CURRENT_DEPLOY_DIR##*/}
+
+	# 将当前版本归档名字为
+	ARCHIVE_TARGET_NAME=${CURRENT_DATE}_${CURRENT_TARGET_DIR}
+
+	mkdir -p ${CURRENT_DEPLOY_DIR}
+}
+
+deploy_target_machine()
+{
+	echo "Archive tiancheng version .... "
+	TAR_PKG=/tmp/TC_${ARCHIVE_TARGET_NAME}.tar.gz
+
+	cd $TARGET_DEPLOY_PATH/$CURRENT_DATE
+	tar -zcvf $TAR_PKG $CURRENT_TARGET_DIR/*
+	cd -
+
+	echo "scp $TAR_PKG  $TARGET_MACHINE_URL"
+	scp $TAR_PKG  $TARGET_MACHINE_URL
+	rm -f $TAR_PKG
+
+}
+
+checkout_build_method()
+{
+	if [ "X0" == "X$1" ]; then
+		TARGET_MACHINE_URL=$TARGET_MACHINE_URL/$DAILY_VERSION_DIR
+        elif [ "X1" == "X$1" ]; then
+		TARGET_MACHINE_URL=$TARGET_MACHINE_URL/$TIMELY_VERSION_DIR
+        fi
+}
+
+#########################################################
+source_parameter
+mkdaily_dir
+checkout_build_method $2
+#deploy_target_machine

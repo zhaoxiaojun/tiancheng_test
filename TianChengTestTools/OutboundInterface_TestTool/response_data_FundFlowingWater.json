@@ -1,0 +1,60 @@
+{
+    "ReturnCode": 0,
+    "Message": "成功！",
+    "FunctionCode": "1001000002",
+    "CurrentTime": "20150909154125173003",
+    "TotalNum": 1,
+    "SessionId": "11111111-1111-1111-1111-111111111111",
+    "DataList": [
+        {
+            "Amount": 0,
+            "FundAmount": 100,
+            "CreateTime": "20150822233237000006",
+            "CreateUser": "FFFFFFFF-1111-1111-1111-111111111111",
+            "Description": "投资你我保服务费",
+            "Description2": "投资你我保服务费2",
+            "InAmount": 0,
+            "Opid": 12345,
+            "PayOutAmount": 0,
+            "ProjectId": 10000,
+            "ProjectType": 1,
+            "RelatedUserId": "EEEEEEEE-1111-1111-1111-111111111111",
+            "RelationFundId": 0,
+            "Status": 1,
+            "SwiftNumber": "1000000003",
+            "Title": "投资-你我保服务费-项目投资体验标",
+            "Type": "1020108",
+            "UpdateTime": "20150823014400000007",
+            "UpdateUser":"KKKKKKKK-1111-1111-1111-111111111111",
+            "UserBasicInfo": {
+                "UserId": "22222222-1111-1111-1111-111111111111"
+            },
+            "UserPrizeId": 0
+        },
+        {
+            "Amount": 10000034523450000009946162165151130,
+            "FundAmount": 1032532543250,
+            "CreateTime": "20150822233237000006",
+            "CreateUser": "FFFFFFFF-1111-1111-1111-111111111111",
+            "Description": "投资你我保服务费",
+            "Description2": "投资你我保服务费2",
+            "InAmount": 10000034523450000009946162165151130,
+            "Opid": 1234534534,
+            "PayOutAmount": 10000034523450000009946162165151130,
+            "ProjectId": 1003232423400,
+            "ProjectType": 2,
+            "RelatedUserId": "EEEEEEEE-1111-1111-1111-111111111111",
+            "RelationFundId": 0,
+            "Status": 2,
+            "SwiftNumber": "1000000002",
+            "Title": "投资-你我保服务费-项目投资体验标",
+            "Type": "1020108",
+            "UpdateTime": "20150823014400000007",
+            "UpdateUser":"KKKKKKKK-1111-1111-1111-111111111111",
+            "UserBasicInfo": {
+                "UserId": "22222222-1111-1111-1111-111111111111"
+            },
+            "UserPrizeId": 1
+        }
+    ]
+}

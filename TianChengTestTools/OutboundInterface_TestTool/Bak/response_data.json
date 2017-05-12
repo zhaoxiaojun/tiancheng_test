@@ -1,0 +1,208 @@
+{
+"ReturnCode" : 0,
+"Message":"成功！",
+"FunctionCode " : "1001000001",
+"CurrentTime " : "20150908203212000000",
+"TotalNum" : 1,
+"SessionId": "11111111-1111-1111-1111-111111111111",
+"DataList" : [{
+        " MsgBody " : {
+            "UserBasicInfo" : {
+                "UserType" : 1,
+                "UserStatus" : 0,
+                "Platform" : "第三方登录来源",
+                "OpenId" : "第三方登录账号",
+                "UserAccount" : "登录账号",
+                "UserId" : "11111111-1111-1111-1111-111111111111",
+                "NickName" : "用户昵称",
+                "HeadImage" : "用户头像",
+                "RealName" : "用户姓名",
+                "TelNo" : "手机号",
+                "IdentityCard" : "证件号",
+                "CardType" : "证件类型",
+                "CardAddress" : "证件（身份证）地址",
+                "RegisterTime" : "yyyymmddHHMMSSmmmuuu",
+                "Age" : 32,
+                "Sex" : 1,
+                "Hometown" : "籍贯",
+                "GuaranteeLever" : 0.02
+            },
+            "LivingInfo" : {
+                "LivingProvince" : "居住省份",
+                "LivingCity" : "居住城市",
+                "LivingArea" : "居住区域",
+                "LivingAddress" : "居住详细地址",
+                "AddressType" : "1"
+            },
+            "StudentCertification" : {
+                "GraduateSchool" : "毕业院校",
+                "GraduateDate" : "yyyymmddHHMMSSmmmuuu",
+                "Major" : "专业",
+                "DegreeType" : 1
+            },
+            "FamilyInfo" : {
+                "MarriageType" : 0,
+                "IsHaveChildren" : 0,
+                "ContactName1": "亲属姓名",
+                "ContactRelation1" : 1,
+                "ContactMobilePhone1" : "亲属电话",
+                "ContactName2" : "其他亲属姓名",
+                "ContactRelation2" : 1,
+                "ContactMobilePhone2" : "其他亲属电话"
+            },
+            "PropertyInfo": {
+                "House" : 1,
+                "Car" : 1,
+                "HouseList" : {
+                    "Mortgage" : 0,
+                    "HouseCity" : "广东省深圳市（省市区）",
+                    "HouseArea" : "房产小区名",
+                    "HouseSize" : "房产大小",
+                    "Houseage" : "购房年限",
+                    "HouseAmount" : "房产价值",
+                    "MortgageAmount" : "房贷金额",
+                    "Mortgageterm" : "房贷年限"
+                },
+                "CarList": {
+                    "Carloans" : 1,
+                    "CarBrand" : "车的品牌",
+                    "CarType" : "车的型号",
+                    "CarAge" : 2,
+                    "CarAmount" : 40000.0,
+                    "CarloansAmount" : 30000.0,
+                    "Carloansterm" : 12,
+                    "SavingAmount" : 20000.0
+                }
+            },
+            "PostPhoneList": {
+                "PhoneListDate" : "yyyymmddHHMMSSmmmuuu",
+                "AddressList" : [{
+                    "phone":"10000200002",
+                    "name" : "张三",
+                    "email" : "12345@qq.com"
+                }, {
+                    "phone":"13900200002",
+                    "name": "姚学铸",
+                    "email" : "209883@qq.com"
+                }]
+            },
+            "StudentInfo": {
+                "LivingProvince" : "学校地址所在省份",
+                "LivingCity" : "学校地址所在城市",
+                "LivingArea" : "学校地址所在区域",
+                "LivingAddress" : "宿舍详细地址",
+                "AttendingCollege" : "就读院系",
+                "SchoolAddress" : "学校详细地址",
+                "StudentProfessional" : "就读专业",
+                "AttendingGrade" : "就读年级",
+                "AttendingClass": "就读班级"
+            },
+            "EnterpRegistrInfo": {
+                "IsEnterprisLegalPerson" : 0,
+                "EnterpRegistrTime" : "yyyymmddHHMMSSmmmuuu",
+                "EnterpRegistrCapital" : 1000000.00,
+                "EnterpRegistrState" : "企业经营状态"
+            }
+        }
+    },{
+        " FunctionCode " : "1001000001",
+        " CurrentTime " : "20150723203212000000",
+        " MsgBody " : {
+            "UserBasicInfo" : {
+                "UserType" : 1,
+                "UserStatus" : 0,
+                "Platform" : "第三方登录来源",
+                "OpenId" : "第三方登录账号",
+                "UserAccount" : "登录账号",
+                "UserId" : "用户ID",
+                "NickName" : "用户昵称",
+                "HeadImage" : "用户头像",
+                "RealName" : "用户姓名",
+                "TelNo" : "手机号",
+                "IdentityCard" : "证件号",
+                "CardType" : "证件类型",
+                "CardAddress" : "证件（身份证）地址",
+                "RegisterTime" : "yyyymmddHHMMSSmmmuuu",
+                "Age" : 32,
+                "Sex" : 1,
+                "Hometown" : "籍贯",
+                "GuaranteeLever" : 0.02
+            },
+            "LivingInfo" : {
+                "LivingProvince" : "居住省份",
+                "LivingCity" : "居住城市",
+                "LivingArea" : "居住区域",
+                "LivingAddress" : "居住详细地址",
+                "AddressType" : "1"
+            },
+            "StudentCertification" : {
+                "GraduateSchool" : "毕业院校",
+                "GraduateDate" : "yyyymmddHHMMSSmmmuuu",
+                "Major" : "专业",
+                "DegreeType" : 1
+            },
+            "FamilyInfo" : {
+                "MarriageType" : 0,
+                "IsHaveChildren" : 0,
+                "ContactName1": "亲属姓名",
+                "ContactRelation1" : 1,
+                "ContactMobilePhone1" : "亲属电话",
+                "ContactName2" : "其他亲属姓名",
+                "ContactRelation2" : 1,
+                "ContactMobilePhone2" : "其他亲属电话"
+            },
+            "PropertyInfo": {
+                "House" : 1,
+                "Car" : 1,
+                "HouseList" : {
+                    "Mortgage" : 0,
+                    "HouseCity" : "广东省深圳市（省市区）",
+                    "HouseArea" : "房产小区名",
+                    "HouseSize" : "房产大小",
+                    "Houseage" : "购房年限",
+                    "HouseAmount" : "房产价值",
+                    "MortgageAmount" : "房贷金额",
+                    "Mortgageterm" : "房贷年限"
+                },
+                "CarList": {
+                    "Carloans" : 1,
+                    "CarBrand" : "车的品牌",
+                    "CarType" : "车的型号",
+                    "CarAge" : 2,
+                    "CarAmount" : 40000.0,
+                    "CarloansAmount" : 30000.0,
+                    "Carloansterm" : 12,
+                    "SavingAmount" : 20000.0
+                }
+            },
+            "PostPhoneList": {
+                "PhoneListDate" : "yyyymmddHHMMSSmmmuuu",
+                "AddressList" : [{
+                    "phone":"10000200002",
+                    "name" : "张三",
+                    "email" : "12345@qq.com"
+                }, {
+                    "phone":"13900200002",
+                    "name": "姚学铸",
+                    "email" : "209883@qq.com"
+                }]
+            },
+            "StudentInfo": {
+                "LivingProvince" : "学校地址所在省份",
+                "LivingCity" : "学校地址所在城市",
+                "LivingArea" : "学校地址所在区域",
+                "LivingAddress" : "宿舍详细地址",
+                "AttendingCollege" : "就读院系",
+                "SchoolAddress" : "学校详细地址",
+                "StudentProfessional" : "就读专业",
+                "AttendingGrade" : "就读年级",
+                "AttendingClass": "就读班级"
+            },
+            "EnterpRegistrInfo": {
+                "IsEnterprisLegalPerson" : 0,
+                "EnterpRegistrTime" : "yyyymmddHHMMSSmmmuuu",
+                "EnterpRegistrCapital" : 1000000.00,
+                "EnterpRegistrState" : "企业经营状态"
+            }
+    }]
+}

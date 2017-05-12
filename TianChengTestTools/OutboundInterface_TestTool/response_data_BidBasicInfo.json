@@ -1,0 +1,137 @@
+{
+    "ReturnCode": 0,
+    "Message": "成功！",
+    "FunctionCode": "1001000003",
+    "CurrentTime": "20150910151347425004",
+    "TotalNum": 1,
+    "SessionId": "11111111-1111-1111-1111-111111111111",
+    "DataList": [{
+            "AmountUsedDesc": "test20150ds907003",
+            "Baddebt": 0,
+            "BorrowerAmount": 3000,
+            "BorrowerRate": 12,
+            "BorrowingMonth": 12,
+            "Bstatus": 2,
+            "CreateDate": "20150907095203000001",
+            "DoneAmount": 0,
+            "GuaranteeRate": 5,
+            "Repaymenttime": "20150907095203000001",
+            "RepaymentTypeId": 5,
+            "FullTimes": "20140907095203000001",
+            "InvestList": [
+                {
+                    "UserBasicInfo": {
+                        "UserId": "11111111-1111-1111-1111-200000000331"
+                    },
+                    "BidBasicInfo": {
+                        "ProjectID": "1000012345678"
+                    },
+                    "DfAmount": 101234567,
+                    "StartDate": "20140907095203000002",
+                    "LocalInfo": {
+                        "LocalName": "用户位置",
+                        "Province": "省份",
+                        "City": "城市",
+                        "Longitude": "22.53124678116324",
+                        "Latitude": "114.01205565959234",
+                        "Time": "20150907095203000002"
+                    }
+                }
+            ],
+            "JDlist": [
+                {
+                    "BidBasicInfo": {
+                        "ProjectID": "1111112345678"
+                    },
+                    "JdResult": 0,
+                    "JdTime": "20150907100554000001",
+                    "OnSite": 1,
+                    "LoanAmount": 10331,
+                    "JdReason": "担保理由",
+                    "Photo": [
+                        "/api/20150909/edf3d9af-0eb9-471d-b2dc-d00bf363e4e7/img/2015090921121354672661123_s.jpg",
+                        "/api/20150909/edf3d9af-0eb9-471d-b2dc-d00bf363e4e7/img/2015090921121094747661123_s.jpg",
+                        "/api/20150909/edf3d9af-0eb9-471d-b2dc-d00bf363e4e7/img/2015090921120672729611123_s.jpg",
+                        "/api/20150909/edf3d9af-0eb9-471d-b2dc-d00bf363e4e7/img/2015090917345454005641123_s.jpg",
+                        "/api/20150909/edf3d9af-0eb9-471d-b2dc-d00bf363e4e7/img/2015090917325002277611123_s.jpg",
+                        "/api/20150909/edf3d9af-0eb9-471d-b2dc-d00bf363e4e7/img/2015090917324784494641123_s.jpg",
+                        "/api/20150909/edf3d9af-0eb9-471d-b2dc-d00bf363e4e7/img/2015090917324478974651231_s.jpg",
+                        "/api/20150909/edf3d9af-0eb9-471d-b2dc-d00bf363e4e7/img/2015090916212265859681123_s.jpg",
+                        "/api/20150909/edf3d9af-0eb9-471d-b2dc-d00bf363e4e7/img/2015090916211863892621231_s.jpg",
+                        "/api/20150909/edf3d9af-0eb9-471d-b2dc-d00bf363e4e7/img/2015090915565369669621231_s.jpg",
+                        "/api/20150909/edf3d9af-0eb9-471d-b2dc-d00bf363e4e7/img/2015090915494380256641231_s.jpg",
+                        "/api/20150909/edf3d9af-0eb9-471d-b2dc-d00bf363e4e7/img/2015090915450449115621231_s.jpg",
+                        "/api/20150909/edf3d9af-0eb9-471d-b2dc-d00bf363e4e7/img/2015090915450188526641231_s.jpg",
+                        "/api/20150909/edf3d9af-0eb9-471d-b2dc-d00bf363e4e7/img/2015090915445724544621231_s.jpg",
+                        "/api/20150909/edf3d9af-0eb9-471d-b2dc-d00bf363e4e7/img/2015090915445464173681123_s.jpg",
+                        "/api/20150909/edf3d9af-0eb9-471d-b2dc-d00bf363e4e7/img/2015090915315125607661231_s.jpg",
+                        "/api/20150909/edf3d9af-0eb9-471d-b2dc-d00bf363e4e7/img/2015090915314810595631231_s.jpg",
+                        "/api/20150909/edf3d9af-0eb9-471d-b2dc-d00bf363e4e7/img/2015090915174247445621231_s.jpg",
+                        "/api/20150909/edf3d9af-0eb9-471d-b2dc-d00bf363e4e7/img/2015090915173925907691231_s.jpg"
+                    ],
+                    "QdTime": "20150907095524000001",
+                    "UserBasicInfo": {
+                        "UserId": "11111111-1111-1111-1111-2000000003331"
+                    },
+                    "LocalInfo": {
+                        "LocalName": "用户位置",
+                        "Province": "省份",
+                        "City": "城市",
+                        "Longitude": "22.53124678116324",
+                        "Latitude": "114.01205565959234",
+                        "Time": "20150907095203000001"
+                    }
+                }
+            ],
+            "LateAmount": 3198.56,
+            "LendUserInfo": {
+                "UserId": "11111111-1111-1111-1111-11111111111111-1223456789331"
+            },
+            "LoanList": [
+                {
+                    "UserBasicInfo": {
+                        "UserId": "11111111-1111-1111-1111-20000000331331"
+                    },
+                    "DfAmount": 1000000,
+                    "DfOverdue": "20150907095203000001",
+                    "StartDate": "投资开始时间",
+                    "LocalInfo": {
+                        "LocalName": "用户位置",
+                        "Province": "省份",
+                        "City": "城市",
+                        "Longitude": "22.53124678116324",
+                        "Latitude": "114.01205565959234",
+                        "Time": "20150907095203000001"
+                    }
+                }
+            ],
+            "LocalInfo": {
+                "LocalName": "用户位置",
+                "Province": "省份",
+                "City": "城市",
+                "Latitude": "22.53124678116324",
+                "Longitude": "114.01205565959738",
+                "Time": "20150907095203000001"
+            },
+            "Overdue": 0,
+            "ProjectID": "1123456789331",
+            "RepaymentList": [
+                {
+                    "Amount": 123456789331,
+                    "Rates": 60,
+                    "Date": "20150907095203000001",
+                    "Penalty": 11,
+                    "Status": 0
+                },
+                {
+                    "Amount": 11123456789331,
+                    "Rates": 61,
+                    "Date": "20150907095203000001",
+                    "Penalty": 39,
+                    "Status": 1
+                }
+            ],
+            "Update": "20150907095204000001",
+            "Update1": 1441590724000
+    }]
+}
